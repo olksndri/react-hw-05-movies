@@ -21,7 +21,6 @@ const Home = () => {
             }))
             })
             .catch(err => console.log(err));
-        console.log("hi"); 
     }, [location])
 
     return (

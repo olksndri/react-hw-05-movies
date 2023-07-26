@@ -7,6 +7,8 @@ import { StyledLink } from "./App";
 const MovieDetails = () => {
     const { movieId } = useParams();
     const [movieDetails, setMovieDetails] = useState(null);
+    const [ error, setError ] = useState(null); 
+
 
     const location = useLocation();
     const backLink = location.state?.from ?? "/";
@@ -44,12 +46,15 @@ const MovieDetails = () => {
                     </div>
                 )
             })
-            .catch(err => console.log(err));
+                .catch(err => {
+                    console.log(err);
+                    setError(Number(err.response.status));
+                });
     }, [backLink, movieId])
 
     return (
         <>
-            {movieDetails}
+            {error === null ? movieDetails : <div>{error === 404 && 'We cant found info about this movie, sorry'}</div>}
         </>
     )
     
