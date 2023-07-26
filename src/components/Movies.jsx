@@ -37,7 +37,7 @@ const Movies = () => {
                 })
                 .catch(err => console.log(err));  
        }
-    }, [searchParams])
+    }, [searchParams, location, query])
 
     return (
         <div className={css['Movie-wrapper']}> 

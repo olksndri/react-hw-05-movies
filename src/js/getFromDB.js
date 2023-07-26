@@ -9,7 +9,6 @@ const options = {
 };
 
 const BASE_URL = 'https://api.themoviedb.org/3/';
-const BASE_IMG_URL = 'https://image.tmdb.org/t/p/';
 
 export const getFromDB = async (pathname = '') => {
   return await axios.get(`${BASE_URL}${pathname}`, options);
