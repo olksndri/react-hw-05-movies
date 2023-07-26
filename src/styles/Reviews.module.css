@@ -1,0 +1,15 @@
+.review-list {
+  list-style: none;
+}
+
+.review-author {
+  margin-bottom: 10px;
+}
+
+.review-item {
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  color: rgb(153, 0, 255);
+}

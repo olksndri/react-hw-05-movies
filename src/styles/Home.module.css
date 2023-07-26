@@ -1,0 +1,10 @@
+.home-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.list {
+  padding-left: 24px;
+}

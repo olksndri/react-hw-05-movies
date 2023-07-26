@@ -1,0 +1,47 @@
+.Movie-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  row-gap: 20px;
+}
+
+.label {
+  font-size: 22px;
+}
+
+.wrapper {
+  display: flex;
+  height: 32px;
+}
+
+.input {
+  width: 220px;
+  outline: none;
+  border: none;
+  background-color: rgba(97, 37, 97, 1);
+  color: aliceblue;
+  border-right: 4px solid rgba(87, 176, 253, 0.904);
+}
+
+.searchBtn {
+  background-color: rgba(97, 37, 97, 1);
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  stroke: aliceblue;
+  transition: background-color 200ms linear, stroke 200ms linear;
+  cursor: pointer;
+}
+
+.searchBtn:hover,
+.searchBtn:focus {
+  background-color: rgba(97, 37, 97, 0.108);
+  stroke: rgba(87, 176, 253, 0.904);
+}
+
+.films-list {
+  padding-left: 18px;
+}
