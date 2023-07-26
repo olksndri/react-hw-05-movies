@@ -10,7 +10,7 @@ const Home = () => {
     const location = useLocation(); 
 
     useEffect(() => {
-        getFromDB('trending/all/day')
+            getFromDB('trending/all/day')
             .then(({data: {results}}) => {
                 setTrending(results.map(el => { 
                     return (
@@ -21,7 +21,8 @@ const Home = () => {
             }))
             })
             .catch(err => console.log(err));
-    })
+        console.log("hi"); 
+    }, [location])
 
     return (
         <div className={css['home-wrapper']}>
