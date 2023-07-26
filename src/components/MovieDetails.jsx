@@ -54,7 +54,7 @@ const MovieDetails = () => {
 
     return (
         <>
-            {error === null ? movieDetails : <div>{error === 404 && 'We cant found info about this movie, sorry'}</div>}
+            {error === null ? movieDetails : <div>{error === 404 && 'we cannot find information about the movie, sorry'}</div>}
         </>
     )
     
